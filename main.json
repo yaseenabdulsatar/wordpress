@@ -632,8 +632,8 @@
         },
         "ctlrVmOsImageReferenceOfferName": {
             "type": "string",
-            "defaultValue": "UbuntuServer",
-            "allowedValues": [ "UbuntuServer" ],
+            "defaultValue": "ubuntu-22",
+            "allowedValues": [ "ubuntu-22" ],
             "metadata": {
                 "description": "Specifies the offer of the markeplate OS image used to create Controller VM."
             }
@@ -757,8 +757,8 @@
         },
         "vmssOsImageReferenceOfferName": {
             "type": "string",
-            "defaultValue": "UbuntuServer",
-            "allowedValues": [ "UbuntuServer" ],
+            "defaultValue": "ubuntu-22",
+            "allowedValues": [ "ubuntu-22" ],
             "metadata": {
                 "description": "Specifies the offer of the markeplate OS image used to create instance of the VMSS resource for web server."
             }
@@ -1547,7 +1547,7 @@
             "nfsHaNode1IP": "[concat(variables('subnetSanPrefix'), '.120')]",
             "osDiskStorageType": "[parameters('osDiskStorageType')]",
             "osType": {
-                "offer": "UbuntuServer",
+                "offer": "ubuntu-22",
                 "publisher": "yaseensmarket1645449809728",
                 "sku": "[parameters('UbuntuVersion')]",
                 "version": "latest"
