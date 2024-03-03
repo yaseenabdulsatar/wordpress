@@ -163,10 +163,11 @@
             "type": "string"
         },
         "UbuntuVersion": {
-            "defaultValue": "18.04-LTS",
+            "defaultValue": "ubuntu-22",
             "allowedValues": [
                 "16.04-LTS",
-                "18.04-LTS"
+                "22.04-LTS",
+				"ubuntu-22"
             ],
             "type": "string",
             "metadata": {
@@ -647,10 +648,11 @@
         },
         "ctlrVmOsImageReferenceSkuName": {
             "type": "string",
-            "defaultValue": "18.04-LTS",
+            "defaultValue": "ubuntu-22",
             "allowedValues": [
                 "16.04-LTS",
-                "18.04-LTS"
+                "22.04-LTS",
+				"ubuntu-22"
             ],
             "metadata": {
                 "description": "The image SKU of the markeplate OS image used to create Controller VM."
@@ -771,10 +773,11 @@
         },
         "vmssOsImageReferenceSkuName": {
             "type": "string",
-            "defaultValue": "18.04-LTS",
+            "defaultValue": "ubuntu-22",
             "allowedValues": [
                 "16.04-LTS",
-                "18.04-LTS"
+                "22.04-LTS",
+				"ubuntu-22"
             ],
             "metadata": {
                 "description": "The image SKU of the markeplate OS image used to create instance of the VMSS resource for web server."
