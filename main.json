@@ -163,11 +163,10 @@
             "type": "string"
         },
         "UbuntuVersion": {
-            "defaultValue": "22.04-LTS",
+            "defaultValue": "18.04-LTS",
             "allowedValues": [
                 "16.04-LTS",
-                "18.04-LTS",
-                "22.04-LTS"
+                "18.04-LTS"
             ],
             "type": "string",
             "metadata": {
@@ -1545,9 +1544,9 @@
             "nfsHaNode1IP": "[concat(variables('subnetSanPrefix'), '.120')]",
             "osDiskStorageType": "[parameters('osDiskStorageType')]",
             "osType": {
-                "offer": "ubuntu-22",
+                "offer": "UbuntuServer",
                 "publisher": "yaseensmarket1645449809728",
-                "sku": "ubuntu-22",
+                "sku": "[parameters('UbuntuVersion')]",
                 "version": "latest"
             },
             "phpVersion": "[parameters('phpVersion')]",
